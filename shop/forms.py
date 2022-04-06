@@ -6,7 +6,7 @@ from django.forms import ModelForm, TextInput, Textarea, FileInput
 class AlbumForm(ModelForm):
     class Meta:
         model = Album
-        fields = ['title', 'desc', 'image']
+        fields = ['title', 'desc', 'image','anotimp']
         widgets = {
             'title': TextInput(attrs={
                 'class': 'form-control',
