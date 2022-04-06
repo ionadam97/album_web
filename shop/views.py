@@ -20,7 +20,7 @@ def adauga(request):
     return render(request, "adauga.html", context)
 
 def iarna(request):
-    postari = Album.objects.all()
+    postari = Album.objects.filter(title='ttj').order_by('title')
     return render (request, 'iarna.html', {'postari': postari})
 
 def primavara(request):

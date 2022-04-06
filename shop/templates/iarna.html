@@ -1,2 +1,33 @@
 {%  extends 'base.html' %}
 {% block title %}poze iarna{% endblock %}
+
+
+{% block content %}
+<main>
+    <section class="py-5 text-center container ">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <p class=" text-muted fw-bold fs-3">Poze Iarna</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2  row-cols-md-3 g-3">
+                {% for post in postari.all %}
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="{{ post.image.url }}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title ">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock%}
