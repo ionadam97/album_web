@@ -7,14 +7,14 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'home'%}">ALBUM</a>
+    <div class="container-fluid  ">
+        <a class="navbar-brand " href="{% url 'home'%}">ALBUM</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse row" id="navbarNav">
-            <div class=" navbar-nav dropdown  col-auto ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <div class=" navbar-nav dropdown   ms-md-auto col-auto me-auto  ">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Categorii
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -25,9 +25,7 @@
                     <li><a class="dropdown-item" href="{% url 'altele'%}">Altele</a></li>
                 </ul>
             </div>
-            <div class="navbar-nav col-auto me-auto">
-                <a class="nav-link" href="#">Pricing</a>
-            </div>
+
             <div class="navbar-nav col-auto ">
                 <a class="nav-link active bg-info" href="{% url 'adauga' %}">Adauga poze</a>
         </div>

@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Album
 from .forms import AlbumForm
 def home(request):
-    postari = Album.objects.all()
+    postari = Album.objects.order_by('-id')
     return render (request, 'home.html', {'postari': postari})
 
 def adauga(request):
