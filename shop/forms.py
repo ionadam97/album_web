@@ -1,5 +1,5 @@
 from .models import Album
-from django.forms import ModelForm, TextInput, Textarea, FileInput
+from django.forms import ModelForm, TextInput, Textarea, FileInput, Select
 
 
 
@@ -18,6 +18,10 @@ class AlbumForm(ModelForm):
             }),
             'image': FileInput(attrs={
                 'class': 'form-control',
+
+            }),
+            'anotimp': Select(attrs={
+                'class': 'form-select',
 
             }),
         }
