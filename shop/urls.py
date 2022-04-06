@@ -10,4 +10,5 @@ urlpatterns = [
     path('primavara', views.primavara, name='primavara'),
     path('vara', views.vara, name='vara'),
     path('toamna', views.toamna, name='toamna'),
+    path('altele', views.altele, name='altele'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,5 +1,5 @@
 from django.db import models
-from django.forms import ModelForm
+
 
 # Create your models here.
 class Album(models.Model):
@@ -19,7 +19,6 @@ class Album(models.Model):
     image = models.ImageField( upload_to='shop_images/')
     desc = models.TextField('text')
     anotimp = models.CharField(choices=nume_anotimp,
-                               default=altele,
                                max_length=10,)
 
     def __str__(self):
