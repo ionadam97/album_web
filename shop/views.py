@@ -19,3 +19,18 @@ def adauga(request):
     context['form']= form
     return render(request, "adauga.html", context)
 
+def iarna(request):
+    postari = Album.objects.all()
+    return render (request, 'iarna.html', {'postari': postari})
+
+def primavara(request):
+    postari = Album.objects.all()
+    return render (request, 'primavara.html', {'postari': postari})
+
+def vara(request):
+    postari = Album.objects.all()
+    return render (request, 'vara.html', {'postari': postari})
+
+def toamna(request):
+    postari = Album.objects.all()
+    return render (request, 'toamna.html', {'postari': postari})
